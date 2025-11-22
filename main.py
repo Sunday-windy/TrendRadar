@@ -1511,7 +1511,8 @@ def format_title_for_platform(
 
     elif platform == "wework":
         if link_url:
-            formatted_title = f"[{cleaned_title}]({link_url})"
+            #formatted_title = f"[{cleaned_title}]({link_url})"
+            formatted_title = cleaned_title # 去掉链接格式
         else:
             formatted_title = cleaned_title
 
